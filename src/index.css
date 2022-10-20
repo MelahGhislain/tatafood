@@ -1,13 +1,25 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+@layer utilities {
+
+    .bg-clip {
+        -webkit-clip-path: polygon(0 0, 98% 0, 73% 100%, 0 100%);
+        clip-path: polygon(0 0, 98% 0, 73% 100%, 0 100%);
+    }
+    .clip-pentagon {
+        -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    }
+    .clip-arrow {
+        -webkit-clip-path: polygon(0% 0%, 48% 0, 54% 52%, 48% 100%, 0% 100%);
+        clip-path: polygon(0% 0%, 48% 0, 54% 52%, 48% 100%, 0% 100%);
+    }
+    .clip-arrow-r {
+        -webkit-clip-path: polygon(100% 0, 53% 0, 46% 48%, 52% 100%, 100% 100%);
+        clip-path: polygon(100% 0, 53% 0, 46% 48%, 52% 100%, 100% 100%);
+    }
 }
