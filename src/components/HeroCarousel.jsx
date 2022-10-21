@@ -20,7 +20,7 @@ const HeroCarousel = () => {
                                    
                                             <Slide >
                                                 <div className="flex flex-shrink-0 relative w-full">
-                                                    <div className='h-[45vh] sm:h-[60vh] md:h-[90vh] w-full relative rounded-lg overflow-hidden'>
+                                                    <div className='h-[40vh] sm:h-[60vh] md:h-[90vh] w-full relative rounded-lg overflow-hidden'>
                                                         <div className='w-full h-full flex justify-end relative'>
                                                             <img src={hero} alt="grocery" className='h-full backdrop-blur-lg rounded-lg md:-mr-20' />
                                                             <div className='absolute top-0 bg-black/30 w-full h-full'></div>
@@ -46,10 +46,10 @@ const HeroCarousel = () => {
 
                                             <Slide >
                                                 <div className="flex flex-shrink-0 relative w-full">
-                                                    <div className='h-[45vh] sm:h-[60vh] md:h-[90vh] w-full relative rounded-lg overflow-hidden'>
+                                                    <div className='h-[40vh] sm:h-[60vh] md:h-[90vh] w-full relative rounded-lg overflow-hidden'>
                                                         <div className='w-full h-full flex justify-end relative'>
                                                             <img src={female} alt="grocery" className='h-full backdrop-blur-lg rounded-lg md:-mr-20' />
-                                                            <div className='absolute top-0 bg-black/30 w-full h-full'></div>
+                                                            <div className='hidden md:inline absolute top-0 bg-black/30 w-full h-full'></div>
                                                         </div>
                                                         <div className='absolute top-0 w-full h-full backdrop-blur-[0px] md:bg-black/10 rounded-lg flex'>
                                                             <div className='flex-1 px-4 sm:px-6 md:px-10 lg:px-24 flex flex-col justify-center backdrop-blur-sm md:backdrop-blur-0 bg-green-500/50 md:bg-green-500  md:bg-clip '>

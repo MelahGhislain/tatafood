@@ -34,20 +34,23 @@ const NavBar = () => {
             {/* navs */}
 
             <ul className='hidden lg:flex space-x-4 items-center'>
-                    <a href="#about">
+                    <a href="/">
                         <li className='font-bold text-xl text-gray-600'>Home</li>
                     </a>
                     <a href="#contact">
                         <li className='font-bold text-xl text-gray-600'>About</li>
                     </a>
                     <a href="#about">
-                        <li className='font-bold text-xl text-gray-600'>Blog</li>
+                        <li className='font-bold text-xl text-gray-600'>What we do</li>
                     </a>
-                    <a href="#contact">
+                    <a href="#partners">
                         <li className='font-bold text-xl text-gray-600'>Partners</li>
                     </a>
                     <a href="#contact">
                         <li className='font-bold text-xl text-gray-600'>Jobs</li>
+                    </a>
+                    <a href="#contact">
+                        <li className='font-bold text-xl text-gray-600'>Contact Us</li>
                     </a>
                 </ul>
 
@@ -108,24 +111,27 @@ const NavBar = () => {
                   </svg>
                 </span>
                 {menu && 
-                  <ul className='absolute w-[20rem] md:w-[24rem] top-12 md:top-14 -right-8 md:-right-24 lg:hidden flex px-4 py-4 items-start bg-white flex-col'>
+                  <ul className='absolute w-[20rem] md:w-[24rem] top-12 md:top-14 -right-8 md:-right-24 lg:hidden flex px-4 py-4 items-start bg-white/70 flex-col'>
                     
                     
 
-                    <a href="#about" className='w-full'>
-                        <li className='font-bold text-gray-600 py-2 border-b w-full border-gray-100'>Home</li>
-                    </a>
-                    <a href="#contact" className='w-full'>
-                        <li className='font-bold text-gray-600 py-2 border-b w-full border-gray-100'>About</li>
+                    <a href="/" className='w-full'>
+                        <li className='font-bold text-gray-600 py-2 border-b w-full border-gray-100/40'>Home</li>
                     </a>
                     <a href="#about" className='w-full'>
-                        <li className='font-bold text-gray-600 py-2 border-b w-full border-gray-100'>Blog</li>
+                        <li className='font-bold text-gray-600 py-2 border-b w-full border-gray-100/40'>About</li>
+                    </a>
+                    <a href="#about" className='w-full'>
+                        <li className='font-bold text-gray-600 py-2 border-b w-full border-gray-100/40'>What we do</li>
+                    </a>
+                    <a href="#partners" className='w-full'>
+                        <li className='font-bold text-gray-600 py-2 border-b w-full border-gray-100/40'>Partners</li>
                     </a>
                     <a href="#contact" className='w-full'>
-                        <li className='font-bold text-gray-600 py-2 border-b w-full border-gray-100'>Partners</li>
+                        <li className='font-bold text-gray-600 py-2 border-b w-full border-gray-100/40'>Jobs</li>
                     </a>
                     <a href="#contact" className='w-full'>
-                        <li className='font-bold text-gray-600 py-2 border-b w-full border-gray-100'>Jobs</li>
+                        <li className='font-bold text-gray-600 py-2 border-b w-full border-gray-100/40'>Contact Us</li>
                     </a>
 
 
