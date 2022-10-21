@@ -4,6 +4,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Privacy from "./pages/Privacy";
 import Term from "./pages/Term";
 import NavBar from "./components/NavBar";
+import Credit from "./pages/Credit";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route exact path="/fr" element={<HomeFr />} />
           <Route exact path="privacy" element={<Privacy />} />
           <Route exact path="term" element={<Term />} />
+          <Route exact path="credit" element={<Credit />} />
         </Routes>
       </BrowserRouter>
       
