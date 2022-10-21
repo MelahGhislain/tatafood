@@ -277,7 +277,7 @@ const Home = () => {
         </div>
 
         {/* Partners */}
-        <div className='mb-10    md:mb-20 lg:my-12 px-4'>
+        <div id='partners' className='mb-10    md:mb-20 lg:my-12 px-4'>
         <h3 className='text-2xl lg:text-3xl text-gray-700 font-bold text-center mb-4'>Our Partners</h3>
         <div className='flex items-center justify-center space-x-4 md:space-x-16 mt-3 overflow-x-auto'>
             <div className='h-[4rem]'>

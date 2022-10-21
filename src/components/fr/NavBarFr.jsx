@@ -153,14 +153,18 @@ const NavBarFr = () => {
                           </svg>
                         </span>
                       </div>
-                    {flag && <div className='absolute top-6 mt-2 flex items-center space-x-2 cursor-pointer h-max text-sm' onClick={changeLan}>
-                        <span className='h-5'>
-                            <img src={!en? usa: france} alt="flag" className='h-full' />
+                    {flag && 
+                    <a href="/">
+                      <div className='absolute top-6 mt-2 flex items-center space-x-2 cursor-pointer h-max text-sm' onClick={changeLan}>
+                          <span className='h-5'>
+                              <img src={!en? usa: france} alt="flag" className='h-full' />
+                            
+                          </span>
+                          <p className=''>{!en? "EN": "FR"}</p>
                           
-                        </span>
-                        <p className=''>{!en? "EN": "FR"}</p>
-                        
-                      </div>}
+                        </div>
+                    </a>
+                    }
 
                     </div>
 

@@ -9,7 +9,6 @@ import cameroon from '../assets/images/cameroon.png'
 import nigeria from '../assets/images/nigeria.png'
 import partners from '../assets/partners.png'
 import lionsgate from '../assets/lionsgate.png'
-import Footer from '../components/Footer'
 import {motion} from 'framer-motion'
 import emailjs from '@emailjs/browser'
 import { ToastContainer, toast } from 'react-toastify';
@@ -19,11 +18,12 @@ import HeroCarouselFr from '../components/fr/HeroCarouselFr'
 import CarouselFr from '../components/fr/CarouselFr'
 import USP1Fr from '../components/fr/USP1Fr'
 import USP2Fr from '../components/fr/USP2Fr'
+import FooterFr from '../components/fr/FooterFr'
 
 const faqs = [
-    {question: "What type of raw foodstuff do you supply?", answer: "- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, voluptatibus."},
-    {question: "Which cities do you operate?", answer: "- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, voluptatibus."},
-    {question: "How long do you take to supply?", answer: "- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, voluptatibus."},
+    {question: "Quel type de denrées crues fournissez-vous ?", answer: "- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, voluptatibus."},
+    {question: "Quelles villes opérez-vous ?", answer: "- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, voluptatibus."},
+    {question: "Combien de temps mettez-vous pour vous approvisionner ?", answer: "- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, voluptatibus."},
 ]
 const countries = [
     {
@@ -130,7 +130,7 @@ const HomeFr = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, transition: "ease" }}
         className='py-8 md:py-12'>
-            <h2 className='text-xl md:text-3xl font-bold px-6 md:px-16 lg:px-24 text-green-600 py-6 text-center md:text-start'>How TATA Food Market works</h2>
+            <h2 className='text-xl md:text-3xl font-bold px-6 md:px-16 lg:px-24 text-green-600 py-6 text-center md:text-start'>Comment fonctionne TATA Food Market</h2>
             <div className='px-6 md:px-16 lg:px-24 py-4 md:py-6 w-full grid items-start grid-cols-[repeat(auto-fit,_minmax(12rem,_1fr))] md:gap-x-6 gap-y-10'>
                 <Card 
                     icon={
@@ -140,7 +140,7 @@ const HomeFr = () => {
                         </svg>
                     }
                     number="1"
-                    text="Download & Sign Up on the Tatafoodmarket App"
+                    text="Téléchargez et inscrivez-vous sur l'application Tatafoodmarket"
                 />
                 <Card 
                     icon={
@@ -149,7 +149,7 @@ const HomeFr = () => {
                         </svg>
                     } 
                     number="2"
-                    text="Place an order"  
+                    text="Commander"  
                 />
                 <Card 
                     icon={
@@ -158,9 +158,7 @@ const HomeFr = () => {
                         </svg>
                     } 
                     number="3"
-                    text="Our agent will be at
-                    your doorstep within
-                    hours" 
+                    text="Notre agent sera à votre porte en quelques heures" 
                 />
             </div>
         </motion.div>
@@ -173,9 +171,9 @@ const HomeFr = () => {
         id="about" className='my-10 md:my-20 px-6 md:px-10 lg:px-24'>
             <div className=' bg-green-500 text-white flex rounded-xl flex-col md:flex-row space-y-4 md:space-y-0'>
                 <div className='flex-1 flex flex-col justify-center px-4 sm:px-8 py-6'>
-                    <h2 className='text-2xl md:text-3xl font-bold'>Download Our Mobile App Today!</h2>
-                    <h5 className='py-2 md:py-4 font-bold'>Save time and money with Tata food market</h5>
-                    <p className='text-neutral-200 text-sm'>Request - Procure - Save time. All at your fingertips. Switch to the tatafoodmarket side of life!</p>
+                    <h2 className='text-2xl md:text-3xl font-bold'>Téléchargez notre application mobile dès aujourd'hui!</h2>
+                    <h5 className='py-2 md:py-4 font-bold'>Gagnez du temps et de l'argent avec Tata food market</h5>
+                    <p className='text-neutral-200 text-sm'>Demander - Procurer - Gagner du temps. Tout à portée de main. Passez du côté tatafoodmarket de la vie !</p>
                     <div className='flex space-x-4 mt-4'>
                         <span>
                             <img src={google} alt="google" />
@@ -202,12 +200,12 @@ const HomeFr = () => {
         id='contact' className=' py-4 md:py-10 md:my-16 px-6 md:px-10 lg:px-24 '>
             <div className=' bg-[#D1954c]  text-white flex py-6 md:py-10 rounded-xl flex-col'>
                 
-                <h2 className='px-4 sm:px-8 text-2xl md:text-3xl font-bold mb-6 w-full text-center'>BE THE FIRST TO USE OUR PLATFORM <br /> <span className='text-lg'>Get Updates from  TATA Food Market</span> </h2>
+                <h2 className='px-4 sm:px-8 text-2xl md:text-3xl font-bold mb-6 w-full text-center'>SOYEZ LE PREMIER À UTILISER NOTRE PLATEFORME <br /> <span className='text-lg'>Obtenez des mises à jour de TATA Food Market</span> </h2>
                 <div className='flex items-center flex-col space-y-6 '>
 
                     <form className='flex-1 px-4 md:w-[35.5rem]' onSubmit={handleSubmit}>
                         <div className="flex flex-col">
-                            <input type="email" name="email" value={value.email} onChange={handleChange} className={`mb-4 rounded bg-gray-50  border-0 text-gray-900 text-sm block w-full p-2.5 placeholder:text-xs  ${error.email? "bg-[#f3cece] placeholder:text-red-500": "border-gray-300"}`} placeholder= {`${error.email? error.email: 'Enter your email to join our email list'}`} required=""/>
+                            <input type="email" name="email" value={value.email} onChange={handleChange} className={`mb-4 rounded bg-gray-50  border-0 text-gray-900 text-sm block w-full p-2.5 placeholder:text-xs  ${error.email? "bg-[#f3cece] placeholder:text-red-500": "border-gray-300"}`} placeholder= {`${error.email? error.email: "Entrez votre e-mail pour rejoindre notre liste d'e-mails"}`} required=""/>
                             
             
                             <div className='rounded bg-gray-50 flex items-center mb-4 '>
@@ -234,14 +232,14 @@ const HomeFr = () => {
                                     </div>}
 
                                 </div>
-                                <input type="number" name="phone" value={value.phone} onChange={handleChange} className={`rounded-r  border-0 text-gray-900 text-sm block w-full p-2.5 placeholder:text-xs ${error.phone? "bg-[#f3cece] placeholder:text-red-500": "border-gray-300"}  `} placeholder={`${error.phone? error.phone: 'Enter your phone number to join our whatsapp'}`}  required=""/>
+                                <input type="number" name="phone" value={value.phone} onChange={handleChange} className={`rounded-r  border-0 text-gray-900 text-sm block w-full p-2.5 placeholder:text-xs ${error.phone? "bg-[#f3cece] placeholder:text-red-500": "border-gray-300"}  `} placeholder={`${error.phone? error.phone: 'Entrez votre numéro de téléphone pour rejoindre notre WhatsApp'}`}  required=""/>
                             </div>
 
 
 
                             <div className='flex items-center md:space-x-6 flex-col md:flex-row'>
-                                <button type="submit" className="flex-none px-2 md:px-4 text-sm w-full md:w-max text-white h-full bg-green-600 py-2.5" >Join us today</button>
-                                <p className=' text-sm text-center mt-2 md:mt-0'>"We promise not to spam you!" We will just update you :)</p>
+                                <button type="submit" className="flex-none px-2 md:px-4 text-sm w-full md:w-max text-white h-full bg-green-600 py-2.5" >Rejoignez-nous aujourd'hui</button>
+                                <p className=' text-sm text-center mt-2 md:mt-0'>"On s'engage à ne pas vous spammer !" :)</p>
                             </div>
                         </div>
                     </form>
@@ -258,10 +256,11 @@ const HomeFr = () => {
         {/* FAQ */}
         <div className='my-10 md:my-20 px-6 flex flex-col md:flex-row'>
             <p className=' py-6 md:px-20 text-3xl md:text-4xl font-bold text-gray-700 leading-[3rem] flex flex-row md:flex-col'>
-                <span className='hidden md:inline'>Frequently </span>
-                <span className='hidden md:inline'> Asked </span>
-                <span className='hidden md:inline'> Questions</span>
-                <span className='md:hidden'>FAQ</span>
+                <span className='hidden md:inline'>Questions </span>
+                <span className='hidden md:inline'> Fréquemment </span>
+                <span className='hidden md:inline'> Posées</span>
+                  
+                <span className='md:hidden'>QFP</span>
             </p>
             <div className='flex-1 md:pr-16 lg:px-16 lg:pl-20'>
                 <ul>
@@ -277,8 +276,8 @@ const HomeFr = () => {
         </div>
 
         {/* Partners */}
-        <div className='mb-10    md:mb-20 lg:my-12 px-4'>
-        <h3 className='text-2xl lg:text-3xl text-gray-700 font-bold text-center mb-4'>Our Partners</h3>
+        <div id='partners' className='mb-10    md:mb-20 lg:my-12 px-4'>
+        <h3 className='text-2xl lg:text-3xl text-gray-700 font-bold text-center mb-4'>Nos partenaires</h3>
         <div className='flex items-center justify-center space-x-4 md:space-x-16 mt-3 overflow-x-auto'>
             <div className='h-[4rem]'>
                 <img src={lionsgate} alt="vtc" className='w-full h-full object-contain' />
@@ -298,7 +297,7 @@ const HomeFr = () => {
        </div>
 
 
-        <Footer />
+        <FooterFr />
     </div>
   )
 }
