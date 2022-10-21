@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import logo from '../assets/grocery.png'
-import france from '../assets/images/france.png'
-import usa from '../assets/images/usa.png'
+import logo from '../../assets/grocery.png'
+import france from '../../assets/images/france.png'
+import usa from '../../assets/images/usa.png'
 
-const NavBar = () => {
+const NavBarFr = () => {
   const [toggle, setToggle] = useState(false)
   const [menu, setMenu] = useState(false)
   const [flag, setFlag] = useState(false)
-  const [en, setEn] = useState(true)
+  const [en, setEn] = useState(false)
 
   const changeLan=()=>{
     setEn(!en)
@@ -34,23 +34,23 @@ const NavBar = () => {
             {/* navs */}
 
             <ul className='hidden lg:flex space-x-4 items-center'>
-                    <a href="/">
-                        <li className='font-bold text-xl text-gray-600'>Home</li>
+                    <a href="/fr">
+                        <li className='font-bold text-xl text-gray-600'>Accueil</li>
                     </a>
                     <a href="#contact">
-                        <li className='font-bold text-xl text-gray-600'>About</li>
+                        <li className='font-bold text-xl text-gray-600'>À propos</li>
                     </a>
                     <a href="#about">
-                        <li className='font-bold text-xl text-gray-600'>What we do</li>
+                        <li className='font-bold text-xl text-gray-600'>Ce que nous faisons</li>
                     </a>
                     <a href="#partners">
-                        <li className='font-bold text-xl text-gray-600'>Partners</li>
+                        <li className='font-bold text-xl text-gray-600'>Partenaires</li>
                     </a>
                     <a href="#contact">
-                        <li className='font-bold text-xl text-gray-600'>Jobs</li>
+                        <li className='font-bold text-xl text-gray-600'>Travaux</li>
                     </a>
                     <a href="#contact">
-                        <li className='font-bold text-xl text-gray-600'>Contact Us</li>
+                        <li className='font-bold text-xl text-gray-600'>Contactez-nous</li>
                     </a>
                 </ul>
 
@@ -92,17 +92,17 @@ const NavBar = () => {
                     </span>
                   </div>
                  {flag && 
-                    <a href="/fr">
-                      <div className='absolute top-6 mt-2 flex items-center space-x-2 cursor-pointer h-max text-sm' onClick={changeLan}>
-                          <span className='h-5'>
-                              <img src={!en? usa: france} alt="flag" className='h-full' />
-                            
-                          </span>
-                          <p className=''>{!en? "EN": "FR"}</p>
+                  <a href="/">
+                    <div className='absolute top-6 mt-2 flex items-center space-x-2 cursor-pointer h-max text-sm' onClick={changeLan}>
+                        <span className='h-5'>
+                            <img src={!en? usa: france} alt="flag" className='h-full' />
                           
-                        </div>
+                        </span>
+                        <p className=''>{!en? "EN": "FR"}</p>
+                        
+                      </div>
 
-                    </a> 
+                  </a> 
                   }
 
                 </div>
@@ -120,23 +120,23 @@ const NavBar = () => {
                     
                     
 
-                    <a href="/" className='w-full'>
-                        <li className='font-bold text-gray-600 py-2 border-b w-full border-gray-100/40'>Home</li>
+                    <a href="/fr" className='w-full'>
+                        <li className='font-bold text-gray-600 py-2 border-b w-full border-gray-100/40'>Accueil</li>
                     </a>
                     <a href="#about" className='w-full'>
-                        <li className='font-bold text-gray-600 py-2 border-b w-full border-gray-100/40'>About</li>
+                        <li className='font-bold text-gray-600 py-2 border-b w-full border-gray-100/40'>À propos</li>
                     </a>
                     <a href="#about" className='w-full'>
-                        <li className='font-bold text-gray-600 py-2 border-b w-full border-gray-100/40'>What we do</li>
+                        <li className='font-bold text-gray-600 py-2 border-b w-full border-gray-100/40'>Ce que nous faisons</li>
                     </a>
                     <a href="#partners" className='w-full'>
-                        <li className='font-bold text-gray-600 py-2 border-b w-full border-gray-100/40'>Partners</li>
+                        <li className='font-bold text-gray-600 py-2 border-b w-full border-gray-100/40'>Partenaires</li>
                     </a>
                     <a href="#contact" className='w-full'>
-                        <li className='font-bold text-gray-600 py-2 border-b w-full border-gray-100/40'>Jobs</li>
+                        <li className='font-bold text-gray-600 py-2 border-b w-full border-gray-100/40'>Travaux</li>
                     </a>
                     <a href="#contact" className='w-full'>
-                        <li className='font-bold text-gray-600 py-2 border-b w-full border-gray-100/40'>Contact Us</li>
+                        <li className='font-bold text-gray-600 py-2 border-b w-full border-gray-100/40'>Contactez-nous</li>
                     </a>
 
 
@@ -191,4 +191,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default NavBarFr

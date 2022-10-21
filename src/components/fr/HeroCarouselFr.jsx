@@ -1,11 +1,11 @@
 import React from 'react'
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
-import female from '../assets/images/female.webp'
-import hero from '../assets/images/hero.gif'
+import female from '../../assets/images/female.webp'
+import hero from '../../assets/images/hero.gif'
 
 
-const HeroCarousel = () => {
+const HeroCarouselFr = () => {
   return (
         <CarouselProvider className="block " naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={2} visibleSlides={1} step={1} infinite={true} dragEnabled={true} isPlaying={true}>
                     <div className="w-full relative flex items-center justify-center ">
@@ -27,15 +27,15 @@ const HeroCarousel = () => {
                                                         </div>
                                                         <div className='absolute top-0 w-full h-full backdrop-blur-[0px] md:bg-black/10 rounded-lg flex'>
                                                             <div className='flex-1  px-4 sm:px-6 md:px-10 lg:px-24 flex flex-col justify-center backdrop-blur-sm md:backdrop-blur-0 bg-[#D1954c]/50 md:bg-[#D1954c]  md:bg-clip '>
-                                                                <h1 className='text-2xl md:text-4xl lg:text-6xl md:leading-[3rem] text-white md-2 sm:mb-4 font-bold'> Everything <br /> you need </h1>
+                                                                <h1 className='text-2xl md:text-4xl lg:text-6xl md:leading-[3rem] text-white md-2 sm:mb-4 font-bold'>Tout ce qu'il <br />  vous faut</h1>
                                                                 <div className='text-white md:pr-10 lg:pr-20 pt-2 md:pt-2'>
-                                                                    <p className='text-sm'>To prepare food for your clients </p>
-                                                                    <p className=' md:text-2xl font-bold md:mt-2'>in your Restaurants,</p>
-                                                                    <p className='md:text-2xl font-bold'>Hotels & food businesses</p>
+                                                                    <p className='text-sm'>Pour préparer les plats de vos clients </p>
+                                                                    <p className=' md:text-2xl font-bold md:mt-2'>dans vos restaurants,</p>
+                                                                    <p className='md:text-2xl font-bold'>Hôtels et commerces <br className='hidden md:block' /> de bouche</p>
                                                                 
                                                                 </div>
                                                                 <a href="#contact">
-                                                                    <button className='w-max bg-green-600 text-sm px-2 py-1 md:px-4 md:py-2 text-white mt-1 sm:mt-4 rounded'>Start ordering now!</button>
+                                                                    <button className='w-max bg-green-600 text-sm px-2 py-1 md:px-4 md:py-2 text-white mt-1 sm:mt-4 rounded'>Commencez à commander maintenant!</button>
                                                                 </a>
                                                             </div>
                                                             <div className='md:flex-1 md:w-[50%]'></div>
@@ -53,15 +53,14 @@ const HeroCarousel = () => {
                                                         </div>
                                                         <div className='absolute top-0 w-full h-full backdrop-blur-[0px] md:bg-black/10 rounded-lg flex'>
                                                             <div className='flex-1 px-4 sm:px-6 md:px-10 lg:px-24 flex flex-col justify-center backdrop-blur-sm md:backdrop-blur-0 bg-green-500/50 md:bg-green-500  md:bg-clip '>
-                                                                <h1 className='text-xl md:text-4xl lg:text-5xl md:leading-[4rem] text-white md-2 sm:mb-4 font-bold'> MAKE YOUR <br className='' /> LIST, SHOP & <br className='' /> RECIEVE</h1>
+                                                                <h1 className='text-xl md:text-4xl lg:text-5xl md:leading-[4rem] text-white md-2 sm:mb-4 font-bold'>FAITES VOTRE <br className='' /> LISTE, MAGASINEZ <br className='' /> ET RECEVEZ</h1>
                                                                 <div className='text-white md:pr-10 lg:pr-20 pt-2 md:pt-2'>
-                                                                    <p className='text-sm md:text-lg'>Making it quick &  easy <br className='md:hidden' /> to place your order  </p>
-                                                                    <p className=' md:text-2xl font-bold md:mt-2'>anytime, anywhere</p>
-                                                                    {/* <p className='text-lg md:text-2xl font-bold'>Hotels & food businesses</p> */}
+                                                                    <p className='text-sm md:text-lg'> Faciliter et accélérer la passation <br className='md:hidden' /> de votre commande  </p>
+                                                                    <p className=' md:text-2xl font-bold md:mt-2'>n'importe quand n'importe où</p>
                                                                 
                                                                 </div>
                                                                 <a href="#contact">
-                                                                    <button className='w-max bg-[#D1954c] text-xs md:text-sm px-2 py-1 md:px-4 md:py-2 text-white mt-2 md:mt-4 rounded'>Delight your customers Now!</button>
+                                                                    <button className='w-max bg-[#D1954c] text-xs md:text-sm px-2 py-1 md:px-4 md:py-2 text-white sm:mt-2 md:mt-4 rounded'>Faites plaisir à vos clients maintenan!</button>
                                                                 </a>
                                                             </div>
                                                             <div className='md:flex-1 md:w-[50%]'></div>
@@ -83,4 +82,4 @@ const HeroCarousel = () => {
   )
 }
 
-export default HeroCarousel
+export default HeroCarouselFr

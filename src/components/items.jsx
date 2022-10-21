@@ -27,3 +27,18 @@ export const  items = [
     {image: yarm, name: "Yarm"},
     {image: irish, name: "Irish"},
 ]
+export const  itemsfr = [
+    {image: cassava, name: "Manioc"},
+    {image: beans, name: "Haricots"},
+    {image: beef, name: "Bœuf"},
+    {image: cocoyarm, name: "Cocoyarm"},
+    {image: corn, name: "Maïs"},
+    {image: fish, name: "Poisson"},
+    {image: fruit, name: "Fruit"},
+    {image: groundnut, name: "Arachide"},
+    {image: groundnutoil, name: "Huile d'arachide"},
+    {image: palmoil, name: "Huile de palme"},
+    {image: potatoes, name: "Patates"},
+    {image: yarm, name: "Yarm"},
+    {image: irish, name: "Pommes"},
+]

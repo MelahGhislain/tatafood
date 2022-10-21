@@ -114,9 +114,9 @@ const Footer = () => {
             Copyright© 2022, TATA Food Market LTD. All Rights Reserved.
             </span>
             <span className='flex items-center space-x-2'>
-                <a href="/">Terms</a> <span>|</span>
-                <a href="/">Credit</a> <span>|</span>
-                <a href="/">Privacy</a>
+                <a href="/term">Terms</a> <span>|</span>
+                <a href="/credit">Credit</a> <span>|</span>
+                <a href="/privacy">Privacy</a>
             </span>
         </div>
     </div>
