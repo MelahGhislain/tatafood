@@ -27,9 +27,12 @@ const NavBar = () => {
     // #eff7fa
       <div className='bg-green-50 px-8 md:px-28 fixed top-0 w-full z-50' >
         <nav className='flex justify-between py-2 md:py-4 items-center'>
-            <div className='h-14 w-14 md:h-16 md:w-16'>
-                <img src={logo} alt="logo" className='w-full h-full object-cover' />
-            </div>
+            <a href="/">
+              <div className='h-14 w-14 md:h-16 md:w-16'>
+                  <img src={logo} alt="logo" className='w-full h-full object-cover' />
+              </div>
+            
+            </a>
             
             {/* navs */}
 
